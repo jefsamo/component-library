@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.wordWrap": "wordWrapColumn",
+  // "editor.wordWrapColumn": 200,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "json.maxItemsComputed": 200000,
+  "editor.codeActionsOnSave": {},
+  "html.format.contentUnformatted": ""
+  // "prettier.printWidth": 100
+}

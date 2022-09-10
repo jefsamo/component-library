@@ -1,0 +1,26 @@
+{
+    "name": "component-library",
+    "version": "1.0.0",
+    "description": "A component library",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    },
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^18.7.16",
+        "@types/react": "^18.0.18",
+        "@types/react-dom": "^18.0.6"
+    },
+    "peerDependencies": {
+        "@types/react": "^18.0.18",
+        "@types/react-dom": "^18.0.6"
+    }
+}
